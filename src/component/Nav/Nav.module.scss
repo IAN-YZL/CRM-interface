@@ -1,0 +1,22 @@
+.nav {
+    width: 35px;
+    height: 600px;
+    background-image: linear-gradient(#5e46ef, #4c35c8);
+    border-radius: 5px 0 0 5px;
+}
+.nav_item {
+    width: 35px;
+    line-height: 37px;
+    text-align: center;
+}
+.nav :first-child {
+    border-radius: 5px 0 0 0;
+}
+.icon {
+    width: 40%;
+    color: white;
+    margin: 0 auto;
+}
+.current {
+    background-color: #4f39d6;
+}

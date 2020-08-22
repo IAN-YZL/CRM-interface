@@ -1,19 +1,13 @@
 import React from 'react';
 import NavItem from './NavItem';
-import checklist from './assets/checklist.png';
-import calendar from './assets/calendar.png';
-import group from './assets/group.png';
-import plan from './assets/plan.png';
+import style from './Nav.module.scss';
 
 
 class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.functions = [
-            {function: "checklist", icon: checklist},
-            {function: "calendar", icon: calendar},
-            {function: "group", icon: group},
-            {function: "plan", icon: plan},
+            "checklist", "calendar", "group", "plan"
         ];
         this.state = {
             functions: this.functions
@@ -22,12 +16,14 @@ class Nav extends React.Component {
 
     render() {
         const functions = this.state.functions;
+        const currentPage = this.props.currentPage;
 
         return (
-            <div>
+            <div className={style.nav}>
                 {functions.map((item) => {
+                    console.log((currentPage===item), item);
                     return (
-                        <NavItem icon={item.icon}>{item.function}</NavItem>
+                        <NavItem function={item} isActive={(currentPage===item)}/>
                     )
                 })}
             </div>
