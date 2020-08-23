@@ -1,0 +1,26 @@
+.title {
+    display: flex;
+    height: 41px;
+    line-height: 41px;
+    margin: 0;
+    position: relative;  
+    border-bottom: 2px solid #f3f4f5;  
+    background-color: #ffffff;
+}
+.title p {
+    height: 41px;
+    margin: 0;
+    vertical-align: middle;
+    padding-left: 9px;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #596672;
+}
+.icon svg{
+    width: 10px;
+    height: 41px;
+    vertical-align: middle;
+    position: absolute;
+    right: 12px;
+}

@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: "checklist",
+      currentPage: "plan",
     }
   }
 
@@ -18,7 +18,7 @@ class App extends React.Component {
     return (
       <div className={style.app}>
         <Nav currentPage={currentPage} />
-        <Category />
+        <Category title={currentPage}/>
       </div>
     )
   }

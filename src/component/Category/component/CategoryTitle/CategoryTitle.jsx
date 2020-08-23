@@ -1,11 +1,13 @@
 import React from 'react';
-import Icon from './assets/svg/expand.svg';
+import {ReactComponent as Icon} from './assets/svg/expand.svg';
+import style from './CategoryTitle.module.scss';
 
-const CategoryTitle = () => (
-    <div>
-        <p></p>
-        <Icon />
-
+const CategoryTitle = (props) => (
+    <div className={style.title}>
+        <p>{props.title}</p>
+        <div className={style.icon}>
+            <Icon />
+        </div>
     </div>
 );
 
