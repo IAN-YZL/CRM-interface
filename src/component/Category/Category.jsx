@@ -1,20 +1,17 @@
 import React from 'react';
 import style from './Category.module.scss';
-import CategoryTitle from './component/CategoryTitle';
-
+import Header from './Header';
 class Category extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
+        this.state = {}
     }
 
     render() {
         const title = this.props.title;
         return (
             <div className={style.category}>
-                <CategoryTitle title={title}></CategoryTitle>
+                <Header title={title}></Header>
             </div>
         )
     }
