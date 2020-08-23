@@ -1,0 +1,19 @@
+.container {
+    height: 34px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e6e9;
+}
+.button {
+    margin: 0 auto;
+    width: 220px;
+    height: 20px;
+    font-size: 8px;
+    font-weight: bold;
+    color: #634cef;
+    background-color: #ffffff;
+    border: solid 1px #d8dbde;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px #e0e3e6;
+}

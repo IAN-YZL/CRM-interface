@@ -7,7 +7,7 @@ class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.functions = [
-            "checklist", "calendar", "group", "plan"
+            "checklist", "calendar", "group", "digital learning plans"
         ];
         this.state = {
             functions: this.functions

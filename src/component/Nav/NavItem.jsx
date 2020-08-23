@@ -25,7 +25,7 @@ class NavItem extends React.Component {
                 return (
                     <Group />
                 );
-            case "plan":
+            case "digital learning plans":
                 return (
                     <Plan />
                 );
