@@ -3,7 +3,7 @@ import style from './Calendar.module.scss';
 
 const Calendar = () => (
     <div>
-        <p>Hello</p>
+        <p>This is a calender page</p>
     </div>
 );
 
