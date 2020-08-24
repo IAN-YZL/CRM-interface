@@ -1,0 +1,25 @@
+.settingBtn {
+    background-color: #ffffff;
+    width: 80px;
+    height: 20px;
+    font-size: 8px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    border: solid 1px #f0f2f3;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    right: 111px;
+    top: 10px;
+    color: #5e46ef;
+    font-weight: 500;
+}
+.settingBtn:active {
+    transform: translateY(0.5px);
+}
+.settingBtn svg{
+    width: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+}

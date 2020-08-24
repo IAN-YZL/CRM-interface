@@ -16,4 +16,8 @@
     border: solid 1px #d8dbde;
     border-radius: 3px;
     box-shadow: 0.5px 0.5px #e0e3e6;
+    outline: none;
+}
+.button:active {
+    transform: translateY(1px);
 }

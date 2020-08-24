@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../Nav';
 import Category from '../Category';
+import Content from '../Content';
 
 
 import style from './App.module.scss';
@@ -27,6 +28,7 @@ class App extends React.Component {
       <div className={style.app}>
         <Nav currentPage={currentPage} onNavItemClick={(page) => this.setState({currentPage: page})} />
         <Category title={currentPage}/>
+        <Content />
       </div>
     )
   }
