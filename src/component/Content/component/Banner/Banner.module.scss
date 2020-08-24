@@ -7,13 +7,13 @@
     padding: 0;
     align-items: center;
     border: solid 1px #f0f2f3;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
     position: absolute;
     right: 111px;
     top: 10px;
     color: #5e46ef;
-    font-weight: 500;
+    font-weight: bold;
 }
 .settingBtn:active {
     transform: translateY(0.5px);
@@ -22,4 +22,21 @@
     width: 12px;
     padding-left: 6px;
     padding-right: 6px;
+}
+.newModule {
+    background-color: #5e46ef;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    outline: none;
+    font-size: 8px;
+    width: 77px;
+    height: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 28px;
+    top: 10px;
+}
+.newModule:active {
+    transform: translateY(0.5px);
 }
