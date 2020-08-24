@@ -40,7 +40,7 @@ class NavItem extends React.Component {
 
         return (
             <div className={isActive?style.nav_item + " " + style.current:style.nav_item}>
-                <div className={style.icon}>
+                <div className={style.icon} onClick={() => this.props.onNavItemClick(functions)}>
                     {this.renderSwitch(functions)}
                 </div>
             </div>

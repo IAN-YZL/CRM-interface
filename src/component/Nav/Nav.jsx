@@ -21,9 +21,8 @@ class Nav extends React.Component {
         return (
             <div className={style.nav}>
                 {functions.map((item) => {
-                    console.log((currentPage===item), item);
                     return (
-                        <NavItem function={item} isActive={(currentPage===item)}/>
+                        <NavItem function={item} isActive={(currentPage===item)} onNavItemClick={this.props.onNavItemClick} />
                     )
                 })}
             </div>
