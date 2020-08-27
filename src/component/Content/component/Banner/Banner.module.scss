@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 .settingBtn:active {
-    transform: translateY(0.5px);
+    transform: translateY(1px);
 }
 .settingBtn svg{
     width: 12px;
@@ -38,5 +38,5 @@
     top: 10px;
 }
 .newModule:active {
-    transform: translateY(0.5px);
+    transform: translateY(1px);
 }
