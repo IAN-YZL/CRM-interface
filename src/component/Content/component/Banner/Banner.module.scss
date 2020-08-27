@@ -9,11 +9,9 @@
     border: solid 1px #f0f2f3;
     border-radius: 3px;
     outline: none;
-    position: absolute;
-    right: 111px;
-    top: 10px;
     color: #5e46ef;
     font-weight: bold;
+    margin-right: 5px;
 }
 .settingBtn:active {
     transform: translateY(1px);
@@ -33,10 +31,17 @@
     width: 77px;
     height: 20px;
     font-weight: bold;
-    position: absolute;
-    right: 28px;
-    top: 10px;
+    // position: absolute;
+    // right: 28px;
+    // top: 10px;
 }
 .newModule:active {
     transform: translateY(1px);
+}
+.btnContainer {
+    position: absolute;
+    right: 28px;
+    top: 10px;
+    display: flex;
+    align-items: center;
 }

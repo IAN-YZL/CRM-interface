@@ -5,7 +5,8 @@
     align-items: center;
     background-color: #fff;
     border: solid 1px #f0f2f3;
-    border-radius: 5px
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 .title {
     font-size: 10px;
@@ -17,6 +18,10 @@
     font-weight: 500;
     margin: 0;
     color: #737e89;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    max-width: 400px;
 }
 .no {
     width: 23px;
