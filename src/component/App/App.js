@@ -14,19 +14,21 @@ class App extends React.Component {
     this.state = {
       currentPage: "digital learning plans",
     };
+
+    this.setCurrentPage = this.setCurrentPage.bind(this);
   }
 
-  // setCurrentPage(pageName) {
-  //   this.setState({
-  //     currentPage: pageName,
-  //   });
-  // }
+  setCurrentPage(pageName) {
+    this.setState({
+      currentPage: pageName,
+    });
+  }
 
   render() {
     const currentPage = this.state.currentPage;
     return (
       <div className={style.app}>
-        <Nav currentPage={currentPage} onNavItemClick={(page) => this.setState({currentPage: page})} />
+        <Nav currentPage={currentPage} onNavItemClick={this.setCurrentPage} />
         <Category title={currentPage}/>
         <Content />
       </div>
